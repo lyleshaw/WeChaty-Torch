@@ -18,7 +18,7 @@
 + ```wechaty-torch.ts``` typescript文件，使用wechaty与微信通讯；
 + ```main.py``` 后端文件，基于fastapi开发，中转图片数据；
 + ```model.py``` 模型调用文件，给出预测和置信度；
-+ ```model.pth``` 模型文件（二进制），使用WideResNet在CIFAR-10数据集上进行训练，测试集准确率91.22%.
++ ```model.pth``` **(由于模型文件过大，请按快速开始的说明手动下载)**模型文件（二进制），使用WideResNet在CIFAR-10数据集上进行训练，测试集准确率91.22%.
 
 ## 依赖库
 
@@ -30,6 +30,7 @@ python：fastapi,uvicorn,torch,numpy,PIL
 
 > 请确保您已将所有依赖环境安装成功
 
-1. 在```wechaty-torch.ts```文件的```const token = 'YOUR_TOKEN_HERE'```处填入您的token（获取方式见wechaty文档）；
-2. 在```model.py```文件的```os.chdir("Your PATH")```处修改为您的文件路径；
-3. 运行```main.py```后运行```wechaty-torch.ts```.
+1. **[点击这里](https://hdueducn-my.sharepoint.com/:u:/g/personal/lyle_hdu_edu_cn/EX3kZ7SAFlZIriRZPQdbVmkBGKWpp8CGviu7Nt9sqlaNrg?e=JLvgr2)** 下载```model.pth```，并将```model.pth```放到项目文件夹下
+2. 在```wechaty-torch.ts```文件的```const token = 'YOUR_TOKEN_HERE'```处填入您的token（获取方式见wechaty文档）；
+3. 在```model.py```文件的```os.chdir("Your PATH")```处修改为您的文件路径；
+4. 运行```main.py```后运行```wechaty-torch.ts```.
