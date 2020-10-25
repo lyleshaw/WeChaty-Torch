@@ -17,7 +17,7 @@ import re
 import base64
 from io import BytesIO
 
-os.chdir("D:/#工作/WeChaty-Torch")
+os.chdir("Your PATH")
 os.getcwd()
 
 label = {
